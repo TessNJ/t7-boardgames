@@ -3,10 +3,27 @@
 
 /*General styling*/
 
+body {
+  background-image: url(../images/more-timmy-artboards-01.svg);
+}
+
+img {
+  width: 70vw;
+}
 
 /*Respondsive builder*/
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 575px) {
     .brandList ol {
-      column-count: 2;
+      column-count: 1;
     }
+
+    section {
+      grid-template-columns: 1fr;
   }
+
+  h2 {
+    color:rgb(34, 79, 123);
+    text-align: center;
+}
+
+}
