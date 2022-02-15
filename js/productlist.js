@@ -27,6 +27,7 @@ function handleBoardgames(data) {
 function showBoardgames(boardGames) {
   console.log("Success!");
   //grab template
+  
   //Clone it
   //Change Content
   //Grab parent

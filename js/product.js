@@ -14,23 +14,24 @@ fetch(url, options)
     return res.json();
   })
   .then(function (data) {
-    handleBoardgames(data);
+    showGames(data);
+    console.log(data);
   });
-
-function handleBoardgames(data) {
-  console.log(data);
-  data.forEach(showBoardgames);
-}
 
 /* Changing Template */
 
-function showBoardgames(boardGames) {
+function showGames(Games) {
   console.log("Success!");
   //grab template
+  const template = document.querySelector("#templateProduct").content;
   //Clone it
+  const copy = template.cloneNode(true);
   //Change Content
+  copy.querySelector(".productName").textContent = Games.Name;
   //Grab parent
+  const parent = document.querySelector("section");
   //Append child
+  parent.appendChild(copy);
 }
 
 /* Other sections here*/
