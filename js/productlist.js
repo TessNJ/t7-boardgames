@@ -39,7 +39,7 @@ function showBoardgames(boardGames) {
   copy.querySelector(".listAge").textContent = `${boardGames.AgeGroup}+`;
   copy.querySelector(
     ".listPlayers"
-  ).textContent = `${boardGames.MinPlayerAmount} - ${boardGames.MaxPlayerAmount}`;
+  ).textContent = `Playeramount: ${boardGames.MinPlayerAmount} - ${boardGames.MaxPlayerAmount}`;
   copy.querySelector(".listCategory").textContent =
     boardGames.Category.join(" | ");
   //Grab parent
