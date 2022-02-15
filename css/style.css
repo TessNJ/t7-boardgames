@@ -48,12 +48,46 @@ a{
     color: violet;
 }
 
+ul li ul.sub-nav{
+    position: absolute;
+    background-color: cadetblue;
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    display: none;
+}
+
+.navbar ul li ul.sub-nav li{
+    color: aliceblue;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px 0;
+    
+}
+
+.navbar ul li ul.sub-nav li:hover{
+    color: violet;
+    box-shadow: inset 0 5px #473bea;
+}
+
+.navbar ul li:hover ul.sub-nav{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 .burgerMenu{
     display: none;
     cursor: pointer;
 }
 
-/* burger menu */
+/* burger menu icon */
 
 .bar{
     display: block;
