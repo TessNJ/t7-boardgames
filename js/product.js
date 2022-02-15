@@ -1,5 +1,6 @@
 /* Getting Database */
-const url = "https://kea21a2sem-d273.restdb.io/rest/t7-boardgames";
+const url =
+  "https://kea21a2sem-d273.restdb.io/rest/t7-boardgames/620a61cff701f4600009f7a6";
 
 const options = {
   headers: {
@@ -21,17 +22,17 @@ fetch(url, options)
 /* Changing Template */
 
 function showGames(Games) {
-  console.log("Success!");
-  //grab template
-  const template = document.querySelector("#templateProduct").content;
-  //Clone it
-  const copy = template.cloneNode(true);
-  //Change Content
-  copy.querySelector(".productName").textContent = Games.Name;
-  //Grab parent
-  const parent = document.querySelector("section");
-  //Append child
-  parent.appendChild(copy);
+  document.querySelector(".productPrice").textContent = `${Games.Price} DKK`;
+  document.querySelector(".productName").textContent = Games.Name;
+  document.querySelector(
+    ".productPlayers"
+  ).textContent = `${Games.MinPlayerAmount} - ${Games.MaxPlayerAmount}`;
+  document.querySelector(".productDescription").textContent = Games.Description;
+  document.querySelector(
+    ".productAge"
+  ).textContent = `Minimum ${Games.AgeGroup}+`;
+  document.querySelector(".productImg").src = Games.ImgSRC;
+  document.querySelector(".productImg").alt = Games.ImgALT;
 }
 
 /* Other sections here*/
