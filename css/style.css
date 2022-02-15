@@ -8,7 +8,10 @@ body {
 }
 
 img {
-  width: 70vw;
+  height: 90vw;
+  align-items: center;
+  align-content: center;
+  justify-self: center;
 }
 
 /*Respondsive builder*/
@@ -19,11 +22,23 @@ img {
 
     section {
       grid-template-columns: 1fr;
+      display: grid;
   }
 
   h2 {
     color:rgb(34, 79, 123);
     text-align: center;
+}
+
+h5 {
+  padding-top: 4vw;
+  background-color: rgb(213, 195, 234);
+  margin-left: 7%;
+  margin-right: 65%;
+  text-align: center;
+  height: 10vw;
+  align-self: center;
+  margin-top: 3%;
 }
 
 }
