@@ -31,7 +31,17 @@ function showBoardgames(boardGames) {
   //Clone it
   const copy = template.cloneNode(true);
   //Change Content
-  copy.querySelector("h2").textContent = boardGames.Name;
+  copy.querySelector(".listName").textContent = boardGames.Name;
+  // copy.querySelector(".listImg").src = boardGames.ImgSRC;
+  // copy.querySelector(".listImg").alt = boardGames.ImgALT;
+  copy.querySelector(".listPrice").textContent = `${boardGames.Price} DKK`;
+  copy.querySelector(".listDescription").textContent = boardGames.Description;
+  copy.querySelector(".listAge").textContent = `${boardGames.AgeGroup}+`;
+  copy.querySelector(
+    ".listPlayers"
+  ).textContent = `${boardGames.MinPlayerAmount} - ${boardGames.MaxPlayerAmount}`;
+  copy.querySelector(".listCategory").textContent =
+    boardGames.Category.join(" | ");
   //Grab parent
   const parent = document.querySelector("section");
   //Append child

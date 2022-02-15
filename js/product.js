@@ -19,7 +19,7 @@ fetch(url, options)
     console.log(data);
   });
 
-/* Changing Template */
+/* Changing Content */
 
 function showGames(Games) {
   document.querySelector(".productPrice").textContent = `${Games.Price} DKK`;
@@ -33,6 +33,7 @@ function showGames(Games) {
   ).textContent = `Minimum ${Games.AgeGroup}+`;
   document.querySelector(".productImg").src = Games.ImgSRC;
   document.querySelector(".productImg").alt = Games.ImgALT;
+  document.querySelector(".productCategory").textContent = Games.Category;
 }
 
 /* Other sections here*/
