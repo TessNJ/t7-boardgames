@@ -39,9 +39,12 @@ function showBoardgames(boardGames) {
   copy.querySelector(".listAge").textContent = `${boardGames.AgeGroup}+`;
   copy.querySelector(
     ".listPlayers"
-  ).textContent = `Playeramount: ${boardGames.MinPlayerAmount} - ${boardGames.MaxPlayerAmount}`;
+  ).textContent = `Player amount: ${boardGames.MinPlayerAmount} - ${boardGames.MaxPlayerAmount}`;
   copy.querySelector(".listCategory").textContent =
     boardGames.Category.join(" | ");
+  copy
+    .querySelector(".listMore")
+    .setAttribute("href", `product.html?id=${boardGames._id}`);
   //Grab parent
   const parent = document.querySelector("section");
   //Append child

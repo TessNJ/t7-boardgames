@@ -1,6 +1,8 @@
 /* Getting Database */
-const url =
-  "https://kea21a2sem-d273.restdb.io/rest/t7-boardgames/620a61cff701f4600009f7a6";
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+const url = "https://kea21a2sem-d273.restdb.io/rest/t7-boardgames/" + id;
 
 const options = {
   headers: {
@@ -31,8 +33,8 @@ function showGames(Games) {
   document.querySelector(
     ".productAge"
   ).textContent = `Minimum ${Games.AgeGroup}+`;
-  document.querySelector(".productImg").src = Games.ImgSRC;
-  document.querySelector(".productImg").alt = Games.ImgALT;
+  // document.querySelector(".productImg").src = Games.ImgSRC;
+  // document.querySelector(".productImg").alt = Games.ImgALT;
   document.querySelector(".productCategory").textContent =
     Games.Category.join(" | ");
 }
