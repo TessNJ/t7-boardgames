@@ -32,8 +32,8 @@ function showBoardgames(boardGames) {
   const copy = template.cloneNode(true);
   //Change Content
   copy.querySelector(".listName").textContent = boardGames.Name;
-  // copy.querySelector(".listImg").src = boardGames.ImgSRC;
-  // copy.querySelector(".listImg").alt = boardGames.ImgALT;
+  copy.querySelector(".productImg").src = boardGames.ImgSRC;
+  copy.querySelector(".productImg").alt = boardGames.ImgALT;
   copy.querySelector(".listPrice").textContent = `${boardGames.Price} DKK`;
   copy.querySelector(".listDescription").textContent = boardGames.Description;
   copy.querySelector(".listAge").textContent = `${boardGames.AgeGroup}+`;

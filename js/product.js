@@ -33,8 +33,8 @@ function showGames(Games) {
   document.querySelector(
     ".productAge"
   ).textContent = `Minimum ${Games.AgeGroup}+`;
-  // document.querySelector(".productImg").src = Games.ImgSRC;
-  // document.querySelector(".productImg").alt = Games.ImgALT;
+  document.querySelector(".productImg").src = Games.ImgSRC;
+  document.querySelector(".productImg").alt = Games.ImgALT;
   document.querySelector(".productCategory").textContent =
     Games.Category.join(" | ");
 }
