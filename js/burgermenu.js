@@ -22,5 +22,6 @@ document.querySelectorAll(".sub-nav li").forEach(n => n.
         burger.classList.remove("active"); 
         navMenu.classList.remove("active"); 
         list.classList.remove("active");
+        
     }
 ))

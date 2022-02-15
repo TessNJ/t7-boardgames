@@ -136,6 +136,8 @@ a {
     visibility: hidden;
     opacity: 1;
   } */
+
+
   .navbar ul.sub-nav.active {
     position: absolute;
     background-color: rgba(95, 158, 160, 0.966);
