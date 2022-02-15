@@ -5,134 +5,151 @@
 /*Respondsive builder*/
 
 /* Navigation */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: blueviolet;
+header {
+  background-color: blueviolet;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    color: aliceblue;
-    text-decoration: none;
+a {
+  color: aliceblue;
+  text-decoration: none;
 }
 
-.navbar{
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
 }
 
-.nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
 
-.nav-link{
-    transition: 0.7s ease;
+.nav-link {
+  transition: 0.7s ease;
 }
 
-.nav-link:hover{
-    color: violet;
+.nav-link:hover {
+  color: violet;
 }
 
-ul li ul.sub-nav{
-    position: absolute;
-    background-color: cadetblue;
-    width: 100%;
-    height: fit-content;
-    left: 0;
-    display: none;
-}
-
-.navbar ul li ul.sub-nav li{
-    color: aliceblue;
-    font-size: 17px;
-    width: 100%;
-    padding: 10px 0;
-    
-}
-
-.navbar ul li ul.sub-nav li:hover{
-    color: violet;
-    box-shadow: inset 0 5px #473bea;
-}
-
-.navbar ul li:hover ul.sub-nav{
-    display: block;
-    cursor: pointer;
+.navbar ul.sub-nav  {
+  position: absolute;
+  background-color: rgba(95, 158, 160, 0.966);
+  width: 200px;
+  min-height: auto;
+  left: 0;
+  
+  visibility: hidden;
+  opacity: 1;
 }
 
 
+.navbar ul li ul.sub-nav li {
+  color: aliceblue;
+  font-size: 17px;
+  width: 100%;
+  padding: 1em;
+  }
+
+.navbar ul li ul.sub-nav li:hover {
+  color: violet;
+  box-shadow: inset 7px 0 blueviolet;
+}
+
+.navbar ul li.active ul.sub-nav {
+  /* cursor: pointer; */
+  visibility: visible;
+  opacity: 1;
+}
 
 
 
-
-
-
-.burgerMenu{
-    display: none;
-    cursor: pointer;
+.burgerMenu {
+  display: none;
+  cursor: pointer;
 }
 
 /* burger menu icon */
 
-.bar{
+.bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: aliceblue;
+}
+@media (max-width: 768px) {
+  .burgerMenu {
     display: block;
-    width: 25px;
-    height: 2px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: aliceblue;
-}
-@media(max-width:768px){
-    .burgerMenu{
-        display: block;
+  }
+  .burgerMenu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burgerMenu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burgerMenu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: darkmagenta;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 10px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+
+  /* .navbar ul.sub-nav {
+    position: absolute;
+    background-color: rgba(95, 158, 160, 0.966);
+    width: 100%;
+    min-height: auto;
+    left: 0;
     
-    }
-    .burgerMenu.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .burgerMenu.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg) ;
-    }
-    .burgerMenu.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg) ;
-    }
+    visibility: hidden;
+    opacity: 1;
+  } */
+  .navbar ul.sub-nav.active {
+    position: absolute;
+    background-color: rgba(95, 158, 160, 0.966);
+    width: 100%;
+    min-height: auto;
+    left: 0;
+    
+    visibility: visible;
+    opacity: 1;
+  }
 
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: darkmagenta;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-
-    }
-    .nav-item{
-        margin: 10px 0;
-        }
-    .nav-menu.active{
-        left: 0;
-    }    
+  /* .navbar ul li:hover ul.sub-nav {
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 1;
+  } */
 }
-
-
-
-
-
