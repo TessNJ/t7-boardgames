@@ -1,5 +1,12 @@
 /*Root elements*/
 
+
 /*General styling*/
 
+
 /*Respondsive builder*/
+@media screen and (min-width: 800px) {
+    .brandList ol {
+      column-count: 2;
+    }
+  }
