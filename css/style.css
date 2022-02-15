@@ -53,6 +53,7 @@ a {
   width: 200px;
   min-height: auto;
   left: 0;
+  top: 7.5%;
   
   visibility: hidden;
   opacity: 1;
@@ -126,16 +127,16 @@ a {
     left: 0;
   }
 
-  /* .navbar ul.sub-nav {
+  .navbar ul.sub-nav {
     position: absolute;
     background-color: rgba(95, 158, 160, 0.966);
     width: 100%;
     min-height: auto;
     left: 0;
-    
+    top: 28%;
     visibility: hidden;
     opacity: 1;
-  } */
+  }
 
 
   .navbar ul.sub-nav.active {
@@ -143,8 +144,6 @@ a {
     background-color: rgba(95, 158, 160, 0.966);
     width: 100%;
     min-height: auto;
-    left: 0;
-    
     visibility: visible;
     opacity: 1;
   }
