@@ -7,15 +7,20 @@ body {
   background-image: url(../images/more-timmy-artboards-01.svg);
 }
 
-img {
-  height: 90vw;
-  align-items: center;
-  align-content: center;
-  justify-self: center;
-}
+
 
 /*Respondsive builder*/
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767.98px) {
+
+  img {
+    height: 90vw;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+    border: 30px;
+    border-color: black;
+  }
+
     .brandList ol {
       column-count: 1;
     }
@@ -39,6 +44,85 @@ h5 {
   height: 10vw;
   align-self: center;
   margin-top: 3%;
+}
+
+}
+
+@media (min-width: 768px) {  
+
+  img {
+    height: 40vw;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+
+  .brandList ol {
+    column-count: 2;
+  }
+
+  section {
+    grid-template-columns: 15% 1fr 1fr 15%;
+    grid-template-rows: 13% 13% 13% 13% 13% 13% 13% 13% 13% 13%;
+    display: grid;
+
+}
+
+h2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+h4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  position: relative;
+  grid-row-start: 2;
+  text-align: start;
+}
+
+h5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  position: relative;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  margin-top: 5vw;
+}
+
+h6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  position: relative;
+  grid-row-start: 3;
+  text-align: start;
+}
+
+h3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  position: relative;
+  grid-row-start: 4;
+  text-align: start;
+}
+
+p {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  position: relative;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  text-align: start;
 }
 
 }
