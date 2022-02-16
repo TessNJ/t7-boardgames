@@ -2,6 +2,17 @@
 
 /*General styling*/
 
+body {
+  background-image: url(../images/more-timmy-artboards-01.svg);
+}
+
+img {
+  height: 90vw;
+  align-items: center;
+  align-content: center;
+  justify-self: center;
+}
+
 /*Respondsive builder*/
 
 /* Navigation */
@@ -47,25 +58,24 @@ a {
   color: violet;
 }
 
-.navbar ul.sub-nav  {
+.navbar ul.sub-nav {
   position: absolute;
   background-color: rgba(95, 158, 160, 0.966);
   width: 200px;
   min-height: auto;
   left: 0;
   top: 7.5%;
-  
+
   visibility: hidden;
   opacity: 1;
 }
-
 
 .navbar ul li ul.sub-nav li {
   color: aliceblue;
   font-size: 17px;
   width: 100%;
   padding: 1em;
-  }
+}
 
 .navbar ul li ul.sub-nav li:hover {
   color: violet;
@@ -77,8 +87,6 @@ a {
   visibility: visible;
   opacity: 1;
 }
-
-
 
 .burgerMenu {
   display: none;
@@ -137,7 +145,6 @@ a {
     visibility: hidden;
     opacity: 1;
   }
-
 
   .navbar ul.sub-nav.active {
     position: absolute;
