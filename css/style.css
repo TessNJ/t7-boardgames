@@ -12,7 +12,7 @@ body {
 /*Respondsive builder*/
 @media screen and (max-width: 767.98px) {
 
-  img {
+  .productImg {
     height: 90vw;
     align-items: center;
     align-content: center;
@@ -30,12 +30,12 @@ body {
       display: grid;
   }
 
-  h2 {
+  .productName {
     color:rgb(34, 79, 123);
     text-align: center;
 }
 
-h5 {
+.productPrice {
   padding-top: 4vw;
   background-color: rgb(213, 195, 234);
   margin-left: 7%;
@@ -50,7 +50,7 @@ h5 {
 
 @media (min-width: 768px) {  
 
-  img {
+  .productImg {
     height: 40vw;
     align-items: center;
     align-content: center;
@@ -72,13 +72,13 @@ h5 {
 
 }
 
-h2{
+.productName {
   grid-column-start: 2;
   grid-column-end: 3;
   text-align: center;
 }
 
-h4 {
+.productCategory {
   grid-column-start: 3;
   grid-column-end: 4;
   text-align: center;
@@ -87,17 +87,20 @@ h4 {
   text-align: start;
 }
 
-h5 {
+.productPrice {
   grid-column-start: 2;
   grid-column-end: 3;
   text-align: center;
   position: relative;
   grid-row-start: 7;
   grid-row-end: 8;
-  margin-top: 5vw;
+  padding-top: 2vw;
+  background-color: rgb(213, 195, 234);
+  padding-bottom: 4vw;
+  margin-right: 16vw;
 }
 
-h6 {
+.productAge {
   grid-column-start: 3;
   grid-column-end: 4;
   text-align: center;
@@ -106,7 +109,7 @@ h6 {
   text-align: start;
 }
 
-h3 {
+.productPlayers {
   grid-column-start: 3;
   grid-column-end: 4;
   text-align: center;
@@ -115,7 +118,7 @@ h3 {
   text-align: start;
 }
 
-p {
+.productDescription {
   grid-column-start: 3;
   grid-column-end: 4;
   text-align: center;
