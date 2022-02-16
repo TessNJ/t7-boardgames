@@ -13,20 +13,9 @@ const options = {
   },
 };
 
-/* Fetching Data */
 
-fetch(url, options)
-  .then(function (res) {
-    return res.json();
-  })
-  .then(function (data) {
-    handleBoardgames(data);
-  });
 
-function handleBoardgames(data) {
-  console.log(data);
-  data.forEach(showBoardgames);
-}
+
 
 /* Changing Template */
 
@@ -126,4 +115,18 @@ if (category == "Adventure") {
   // document.querySelector("#categoryTitle").textContent = "Sport";
 } else {
   url = "https://kea21a2sem-d273.restdb.io/rest/t7-boardgames";
+}
+
+/* Fetching Data */
+fetch(url, options)
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
+    handleBoardgames(data);
+  });
+
+function handleBoardgames(data) {
+  console.log(data);
+  data.forEach(showBoardgames);
 }
