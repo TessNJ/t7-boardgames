@@ -7,30 +7,30 @@ body {
 }
 
 img {
-  height: 90vw;
+  max-height: 90vw;
   align-items: center;
   align-content: center;
   justify-self: center;
 }
 
-/*Respondsive builder*/
-
-/* Navigation */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* Navigation */
 
 header {
   background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
 }
 
-li {
+header li {
   list-style: none;
 }
 
-a {
+header a {
   color: aliceblue;
   text-decoration: none;
 }
@@ -103,6 +103,7 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: aliceblue;
 }
+
 @media (max-width: 768px) {
   .burgerMenu {
     display: block;
@@ -154,10 +155,5 @@ a {
     visibility: visible;
     opacity: 1;
   }
-
-  /* .navbar ul li:hover ul.sub-nav {
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 1;
-  } */
 }
+/*Respondsive builder*/
