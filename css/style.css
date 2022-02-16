@@ -161,16 +161,21 @@ header a {
 
 
 /*Product List style*/
-
-.orderList {
-  box-sizing: border-box;
+main section{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap:1rem;
+  grid-template-columns: repeat(auto-fill, 400px);
+  gap:3rem;
+  padding-left: 5rem;
+}
+.listObject {
+  box-sizing: border-box;
 }
 .productImg{
-  width: 400px;
+  width: 500px;
   height: auto;
+}
+.listName{
+  font-size: 2rem;
 }
 
 
