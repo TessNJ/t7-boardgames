@@ -104,6 +104,9 @@ header a {
   gap: 50px;
 }
 
+header li a {
+  color: aliceblue;
+}
 .nav-link {
   transition: 0.7s ease;
   color: #605c58;
