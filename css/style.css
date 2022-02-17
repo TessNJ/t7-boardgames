@@ -85,7 +85,7 @@ header li {
 }
 
 header a {
-  color: #605c58;
+  color: aliceblue;
   text-decoration: none;
 }
 
@@ -106,6 +106,7 @@ header a {
 
 .nav-link {
   transition: 0.7s ease;
+  color: #605c58;
 }
 
 .nav-link:hover {
