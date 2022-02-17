@@ -2,10 +2,47 @@
 
 
 /*General styling*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;500&family=Quicksand:wght@400;700&family=Righteous&family=Yuji+Syuku&display=swap%22");
+
 
 body {
   background-image: url(../images/more-timmy-artboards-01.svg);
 }
+
+.productAge {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  margin-left: 10%;
+}
+
+.productCategory {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  margin-left: 10%;
+}
+
+.productPrice {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  margin-left: 10%;
+}
+
+.productPlayers {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  margin-left: 10%;
+}
+
+.productDescription {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  margin-left: 10%;
+}
+
 
 
 
@@ -33,6 +70,9 @@ body {
   .productName {
     color:rgb(34, 79, 123);
     text-align: center;
+    font-family: 'Righteous', cursive;
+    color: black;
+    font-size: 180%;
 }
 
 .productPrice {
@@ -44,6 +84,7 @@ body {
   height: 10vw;
   align-self: center;
   margin-top: 3%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 }
@@ -85,6 +126,8 @@ body {
   position: relative;
   grid-row-start: 2;
   text-align: start;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
 }
 
 .productPrice {
@@ -98,6 +141,8 @@ body {
   background-color: rgb(213, 195, 234);
   padding-bottom: 4vw;
   margin-right: 16vw;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
 }
 
 .productAge {
@@ -107,6 +152,10 @@ body {
   position: relative;
   grid-row-start: 3;
   text-align: start;
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 30%;
+  margin-top: 7%;
+  font-size: 1.5em;
 }
 
 .productPlayers {
@@ -116,6 +165,8 @@ body {
   position: relative;
   grid-row-start: 4;
   text-align: start;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
 }
 
 .productDescription {
@@ -126,6 +177,55 @@ body {
   grid-row-start: 5;
   grid-row-end: 7;
   text-align: start;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+
+}
+
+
+@media (min-width: 992px) {
+
+  .productAge {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin-left: 10%;
+  }
+  
+  .productCategory {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin-left: 10%;
+  }
+  
+  .productPrice {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7em;
+    margin-left: 10%;
+  }
+  
+  .productPlayers {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin-left: 10%;
+  }
+  
+  .productDescription {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin-left: 10%;
+  }
+
+  .productName {
+    color:rgb(34, 79, 123);
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: black;
+    font-size: 2em;
 }
 
 }
