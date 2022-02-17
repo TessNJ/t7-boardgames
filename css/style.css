@@ -2,6 +2,7 @@
 /*Root elements*/
 :root{
   --main-font:'Righteous', cursive;
+  --header-font:'Quicksand', sans-serif;
 }
 
 /*General styling*/
@@ -174,25 +175,31 @@ header a {
   gap:3rem;
   padding-left: 8rem;
   padding-top: 2rem;
+  
 }
 .listObject {
   box-sizing: border-box;
+  background-color: plum ;
 }
 .productImg{
   width: 400px;
-  height: auto;
+  height: auto;  
 }
 .listName{
+  font-family: var(--main-font);
   font-size: 2rem;
   text-align: center;
 }
 .listPrice, .listAge, .listPlayers, .listDescription, .listCategory{
-font-size: 1rem;
-font-family: var(--main-font);
+font-size: 1.5rem;
+font-family: var(--header-font);
+padding: 0.2rem;
+margin-left: 0.5rem;
 }
 .listMore{
   font-size: 2rem;
   font-family: var(--main-font);
+  text-align: center;
 }
 
 
