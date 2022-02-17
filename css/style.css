@@ -18,8 +18,11 @@ header {
 }
 
 body {
-  background-image: url(../images/more-timmy-artboards-01.svg);
+  background-image: url(../images/bg-01.svg);
   font-family: "Quicksand", sans-serif;
+}
+.listObject a {
+  font-size: 1rem;
 }
 h2 {
   font-family: "Righteous", cursive;
@@ -82,7 +85,7 @@ header li {
 }
 
 header a {
-  color: aliceblue;
+  color: #605c58;
   text-decoration: none;
 }
 
@@ -111,12 +114,11 @@ header a {
 
 .navbar ul.sub-nav {
   position: absolute;
-  background-color: rgba(95, 158, 160, 0.966);
+  background-color: #605c58;
   width: 200px;
   min-height: auto;
   left: 0;
   top: 7.5%;
-
   visibility: hidden;
   opacity: 1;
 }
