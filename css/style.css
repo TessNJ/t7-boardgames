@@ -163,7 +163,7 @@ header a {
 /*Product List style*/
 
 /*not sure about the following selector as in the product page we use the same tags*/
-main section{
+#orderList section{
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
   gap:3rem;
