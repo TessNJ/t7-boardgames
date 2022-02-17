@@ -4,6 +4,11 @@
 /*General styling*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;500&family=Quicksand:wght@400;700&family=Righteous&family=Yuji+Syuku&display=swap%22");
 
+header {
+  background-image: url("../images/navbar.png");
+  display: flex;
+  justify-content: space-between;
+}
 
 body {
   background-image: url(../images/more-timmy-artboards-01.svg);
@@ -48,6 +53,14 @@ body {
 
 /*Respondsive builder*/
 @media screen and (max-width: 767.98px) {
+
+
+
+header {
+  background-image: url("../images/phone-nav.png");
+  display: flex;
+  justify-content: space-between;
+}
 
   .productImg {
     height: 90vw;
